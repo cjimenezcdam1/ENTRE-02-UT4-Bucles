@@ -28,11 +28,9 @@ public class DemoBucles
      *  Usa bucles while
      */
     public int mayorPotencia2(int numero) {
-        int contador = 1;
         int potencia = 1;
         while((potencia*2) <= numero){
             potencia *= 2;
-            contador++;
         }
         return potencia;
     }
@@ -53,7 +51,11 @@ public class DemoBucles
      *  64 =    64
      */
     public void escribirSumaPotencias(int numero) {
-        
+        // int valor = numero;
+        // mayorPotencia2(valor);
+        // while(){
+            
+        // }
     }
 
     /**
