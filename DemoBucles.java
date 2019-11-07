@@ -1,17 +1,19 @@
+import java.util.Random;
 /**
- *    @author - 
+ *    @author Christian Jiménez Cuesta 
  */
 public class DemoBucles
 {
     private final char ASTERISCO = '*';
     private final char ESPACIO = ' ';
+    private Random generador;
 
     /**
      * Constructor  
      */
     public DemoBucles()
     {
-       
+       generador = new Random();
     }
 
     /**
@@ -26,9 +28,13 @@ public class DemoBucles
      *  Usa bucles while
      */
     public int mayorPotencia2(int numero) {
-        
-        return 0;
-
+        int contador = 1;
+        int potencia = 1;
+        while((potencia*2) <= numero){
+            potencia *= 2;
+            contador++;
+        }
+        return potencia;
     }
 
     /**
@@ -47,9 +53,7 @@ public class DemoBucles
      *  64 =    64
      */
     public void escribirSumaPotencias(int numero) {
-
-         
-
+        
     }
 
     /**
