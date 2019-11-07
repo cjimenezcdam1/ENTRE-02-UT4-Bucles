@@ -51,11 +51,16 @@ public class DemoBucles
      *  64 =    64
      */
     public void escribirSumaPotencias(int numero) {
-        // int valor = numero;
-        // mayorPotencia2(valor);
-        // while(){
-            
-        // }
+        int valor = numero;
+        int potencia = mayorPotencia2(valor);
+        System.out.printf("%6s",numero + " =");
+        System.out.printf("%6d",potencia );
+        while(valor > potencia){
+            valor -= potencia;
+            potencia = mayorPotencia2(valor);
+            System.out.printf("%6d",potencia);
+        }
+        System.out.println("\n");
     }
 
     /**
@@ -97,5 +102,4 @@ public class DemoBucles
          
 
     }
-
 }
