@@ -29,7 +29,7 @@ public class DemoBucles
      */
     public int mayorPotencia2(int numero) {
         int potencia = 1;
-        while((potencia*2) <= numero){
+        while((potencia * 2) <= numero){
             potencia *= 2;
         }
         return potencia;
@@ -74,11 +74,7 @@ public class DemoBucles
      * Utiliza bucles while
      * 
      */
-    public void generarAleatorios(int n) {
-        // Aunque en el enunciado no dice que se tenga que introducir parámetro,
-        // pues habla de que el máximo de aleatorios generados es 10.
-        // Por las fotos de comprobación de este y el final de este al hablar
-        // "n" he hecho el bucle utilizando el parámetro.
+    public void generarAleatorios(int n){
         int contador = 0;
         int aleatorio = 1;
         System.out.println("Nºs aleatorios como suma de potencias de 2");
@@ -96,13 +92,17 @@ public class DemoBucles
     }
 
     /**
-     *  Escribe en pantalla caracter n veces en la misma línes
+     *  Escribe en pantalla caracter n veces en la misma línea
      *  
      *  Usa bucles for
      */
     public void escribirCaracter(int n, char caracter)
     {
-        
+        String totalLinea = "";
+        for(int i = 1; i <= n; i++){
+            totalLinea += caracter;
+        }
+        System.out.println(totalLinea);
     }
 
     /**
@@ -112,9 +112,8 @@ public class DemoBucles
      *   Usa bucles for
      */
     public  void mostrarEscalera(int escalones, int alto, int ancho) {
+        
+        
         System.out.println();
-
-         
-
     }
 }
