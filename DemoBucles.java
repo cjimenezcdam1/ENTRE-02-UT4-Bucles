@@ -13,7 +13,7 @@ public class DemoBucles
      */
     public DemoBucles()
     {
-       generador = new Random();
+        generador = new Random();
     }
 
     /**
@@ -87,7 +87,7 @@ public class DemoBucles
             System.out.println("\nBucle terminado porque salió el " + aleatorio);
         }else{
             System.out.println("\nBucle terminado porque se han generado ya " 
-                                + contador + " aleatorios");
+                + contador + " aleatorios");
         }
     }
 
@@ -98,11 +98,9 @@ public class DemoBucles
      */
     public void escribirCaracter(int n, char caracter)
     {
-        String totalLinea = "";
         for(int i = 1; i <= n; i++){
-            totalLinea += caracter;
+            System.out.print(caracter);
         }
-        System.out.println(totalLinea);
     }
 
     /**
@@ -112,8 +110,15 @@ public class DemoBucles
      *   Usa bucles for
      */
     public  void mostrarEscalera(int escalones, int alto, int ancho) {
-        
-        
-        System.out.println();
-    }
+        String imprimirTotal = "";
+        for(int contadorEscalones = 0; contadorEscalones < escalones; contadorEscalones++){
+            for(int contarAlto = 1; contarAlto <= alto; contarAlto++){
+                System.out.print("\n");
+                for(int contadorEspacio = 1; contadorEspacio <= (ancho * contadorEscalones); contadorEspacio++){
+                    System.out.print(ESPACIO);
+                }
+                escribirCaracter(ancho, ASTERISCO);
+            }
+        }
+}
 }
