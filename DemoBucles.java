@@ -120,5 +120,5 @@ public class DemoBucles
                 escribirCaracter(ancho, ASTERISCO);
             }
         }
-}
+    }
 }

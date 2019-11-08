@@ -14,7 +14,6 @@ public class Utilidades
     {
         System.out.println("\n\n\tIntro para continuar");
         teclado.nextLine();
-
     }
     
      /**
@@ -23,8 +22,5 @@ public class Utilidades
     public static void borrarPantalla()
     {
         System.out.print('\u000C');
-
     }
-    
-    
 }
