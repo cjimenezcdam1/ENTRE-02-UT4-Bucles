@@ -53,6 +53,7 @@ public class DemoBucles
     public void escribirSumaPotencias(int numero) {
         int valor = numero;
         int potencia = mayorPotencia2(valor);
+        System.out.println("\n");
         System.out.printf("%6s",numero + " =");
         System.out.printf("%6d",potencia );
         while(valor > potencia){
@@ -60,7 +61,6 @@ public class DemoBucles
             potencia = mayorPotencia2(valor);
             System.out.printf("%6d",potencia);
         }
-        System.out.println("\n");
     }
 
     /**
@@ -81,15 +81,16 @@ public class DemoBucles
         // "n" he hecho el bucle utilizando el parámetro.
         int contador = 0;
         int aleatorio = 1;
+        System.out.println("Nºs aleatorios como suma de potencias de 2");
         while(aleatorio != 0 && contador < n){
             aleatorio = generador.nextInt(256);
             escribirSumaPotencias(aleatorio);
             contador++;
         }
         if(aleatorio == 0){
-            System.out.println("Bucle terminado porque salió el " + aleatorio);
+            System.out.println("\nBucle terminado porque salió el " + aleatorio);
         }else{
-            System.out.println("Bucle terminado porque se han generado ya " 
+            System.out.println("\nBucle terminado porque se han generado ya " 
                                 + contador + " aleatorios");
         }
     }
