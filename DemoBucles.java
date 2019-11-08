@@ -75,9 +75,23 @@ public class DemoBucles
      * 
      */
     public void generarAleatorios(int n) {
-
-       
-
+        // Aunque en el enunciado no dice que se tenga que introducir parámetro,
+        // pues habla de que el máximo de aleatorios generados es 10.
+        // Por las fotos de comprobación de este y el final de este al hablar
+        // "n" he hecho el bucle utilizando el parámetro.
+        int contador = 0;
+        int aleatorio = 1;
+        while(aleatorio != 0 && contador < n){
+            aleatorio = generador.nextInt(256);
+            escribirSumaPotencias(aleatorio);
+            contador++;
+        }
+        if(aleatorio == 0){
+            System.out.println("Bucle terminado porque salió el " + aleatorio);
+        }else{
+            System.out.println("Bucle terminado porque se han generado ya " 
+                                + contador + " aleatorios");
+        }
     }
 
     /**
@@ -87,7 +101,7 @@ public class DemoBucles
      */
     public void escribirCaracter(int n, char caracter)
     {
-         
+        
     }
 
     /**
