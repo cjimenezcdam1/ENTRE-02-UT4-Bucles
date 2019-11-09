@@ -27,11 +27,16 @@ public class AppDemoBucles
     {
          Scanner teclado = new Scanner(System.in);
          DemoBucles demo = new DemoBucles();
-         System.out.println("Teclee tope de aleatorios a generar [10, 15]: ");
-         int tope = teclado.nextInt();
+         int tope = 0;
+         int error = 0;
          do{
-             System.out.println("Error, teclee tope de aleatorios a generar [10, 15]: ");
+             String stringError = "";
+             if(error > 0){
+                 stringError = "Error, ";
+             }
+             System.out.println(stringError + "Teclee tope de aleatorios a generar [10, 15]: ");
              tope = teclado.nextInt();
+             error++;
          }while(tope <= 10 || tope >= 15);
          demo.generarAleatorios(tope);
          Utilidades.hacerPausa();
