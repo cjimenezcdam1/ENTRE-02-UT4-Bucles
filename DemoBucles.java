@@ -77,7 +77,7 @@ public class DemoBucles
     public void generarAleatorios(int n){
         int contador = 0;
         int aleatorio = 1;
-        System.out.println("Nºs aleatorios como suma de potencias de 2");
+        System.out.println("\nNºs aleatorios como suma de potencias de 2");
         while(aleatorio != 0 && contador < n){
             aleatorio = generador.nextInt(256);
             escribirSumaPotencias(aleatorio);

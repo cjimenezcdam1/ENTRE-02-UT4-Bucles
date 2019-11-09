@@ -32,7 +32,7 @@ public class AppDemoBucles
          do{
              System.out.println("Error, teclee tope de aleatorios a generar [10, 15]: ");
              tope = teclado.nextInt();
-         }while(tope >= 10 || tope <= 15);
+         }while(tope <= 10 || tope >= 15);
          demo.generarAleatorios(tope);
          Utilidades.hacerPausa();
          Utilidades.borrarPantalla();
