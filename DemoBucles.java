@@ -110,7 +110,6 @@ public class DemoBucles
      *   Usa bucles for
      */
     public  void mostrarEscalera(int escalones, int alto, int ancho) {
-        String imprimirTotal = "";
         for(int contadorEscalones = 0; contadorEscalones < escalones; contadorEscalones++){
             for(int contarAlto = 1; contarAlto <= alto; contarAlto++){
                 System.out.print("\n");
